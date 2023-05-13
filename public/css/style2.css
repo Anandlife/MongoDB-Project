@@ -1,0 +1,156 @@
+/* Reset styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input[type="submit"] {
+    cursor: pointer;
+}
+
+/* Header styles */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: url("https://picsum.photos/id/1015/1920/1080");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff5500;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 2rem 0;
+    color: #fff;
+    text-shadow: 2px 2px #333;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ff5500;
+    color: #fff;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #ff5500;
+}
+
+/* Main styles */
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+    margin: 0 2rem;
+    text-align: center;
+}
+
+.feature i {
+    font-size: 4rem;
+    color: #ff5500;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.feature p {
+    margin: 0 0 2rem;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: #ff5500;
+    color: #fff;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 4rem;
+    margin: 2rem 0;
+}
+
+.call-to-action p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer styles */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
