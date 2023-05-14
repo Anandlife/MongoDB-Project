@@ -1,3 +1,5 @@
+require( 'dotenv' ).config();
+
 const express = require( "express" );
 
 const bcrypt = require( "bcryptjs" );
@@ -65,6 +67,7 @@ app.post( "/register", async ( req, res ) =>
 
 
 
+            const token = await registerEmployee.genarateAuthToken();
 
             const registered = await registerEmployee.save();
 
@@ -106,6 +109,8 @@ app.post( "/login", async ( req, res ) =>
 
 
         const isMatch = bcrypt.compare( password, useremail.password );
+
+        const token = await useremail.genarateAuthToken();
 
         if ( isMatch )
         {
